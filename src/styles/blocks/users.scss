@@ -1,0 +1,93 @@
+.users {
+  max-width: 1200px;
+  margin: 0 auto;
+
+  &__title {
+    text-align: center;
+    margin-bottom: 30px;
+  }
+
+  &__forms {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+
+    transform: translateX(-100%);
+    transition: 0.5s;
+
+    &--active {
+      transform: translateX(0);
+      transition: 0.5s;
+      position: static;
+    }
+  }
+
+  &__fieldset {
+    border: 1px solid $border-fieldSet;
+    margin: 10px;
+
+    &--main {
+      padding: 15px;
+    }
+
+    &--common {
+      padding: 10px;
+    }
+  }
+
+  &__subtitle {
+    padding: 0 5px;
+    margin-left: 10px;
+
+    font-size: 25px;
+    font-style: italic;
+    font-weight: bolder;
+
+    &--main {
+      text-align: center;
+      font-style: normal;
+      font-size: 30px;
+    }
+  }
+
+  &__container-out {
+    display: block;
+
+    @include middleScreen {
+      display: flex;
+    }
+  }
+
+  &__container-in {
+    padding: 20px;
+  }
+
+  &__button {
+    display: block;
+    margin: 20px auto;
+    height: 50px;
+    width: 250px;
+
+    background-color: $bgc-buttonAddUser;
+    border: transparent;
+    border-radius: 10px;
+
+    font-size: 25px;
+
+    transition: 0.3s;
+    cursor: pointer;
+
+    &:hover {
+      background-color: aqua;
+      transform: scale(1.1);
+      border: 1px solid rgb(3, 29, 29);
+      color: rgb(180, 19, 19);
+    }
+
+    &:active {
+      border: 3px solid rgb(180, 19, 19);
+      background-color: rgb(3, 123, 123);
+    }
+  }
+}

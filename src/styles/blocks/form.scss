@@ -1,0 +1,15 @@
+.form {
+  background-color: $bgc-form-area;
+  padding-bottom: 1px;
+
+  &__field {
+    padding: 10px;
+  }
+}
+
+.input {
+  border: 1px solid $color-borderInput;
+  border-radius: 5px;
+  padding-left: 5px;
+  height: 30px;
+}

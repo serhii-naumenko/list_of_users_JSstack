@@ -1,7 +1,19 @@
+@import "./blocks/reset.scss";
 @import "utils";
 @import "fonts";
 @import "typography";
+@import "./blocks/users.scss";
+@import "./blocks/user.scss";
+@import "./blocks/table.scss";
+@import "./blocks/form.scss";
+@import "./blocks/modal.scss";
 
 body {
-  background: $c-gray;
+  background: $general-bgc-gray;
+}
+
+.remove {
+  cursor: pointer;
+  text-decoration: none;
+  color: #fff;
 }

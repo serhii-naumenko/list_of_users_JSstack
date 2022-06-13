@@ -1,0 +1,39 @@
+.user {
+
+  &__button {
+    margin-bottom: 15px;
+    padding: 10px;
+
+    color: $color-buttonCloseForm;
+    cursor: pointer;
+    transition: 0.2s;
+
+    &--opener {
+      background-color: $bgc-buttonOpenForm;
+      height: 40px;
+      width: 250px;
+      border-radius: 5px;
+
+      &:hover {
+        background-color: rgb(29, 247, 247);
+        font-weight: bolder;
+      }
+    }
+
+    &--closer {
+      background-color: rgb(250, 215, 226);
+
+      &:hover {
+        background-color: rgb(228, 136, 165);
+        color: black;
+      }
+
+      @include bigScreen {
+        position: fixed;
+        top: 17px;
+        right: 10px;
+        height: 40px;
+      }
+    }
+  }
+}
